@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    cout<<"enter value 1 :";
+    cin>>n;
+    cout<<"enter value 2 :";
+    cin>>m;
+    cout<<"n="<<n<<"m="<<m<<endl;
+    n=n^m;
+    m=n^m;
+    n=n^m;
+    cout<<"n="<<n<<"m="<<m<<endl;
+}
