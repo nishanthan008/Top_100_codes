@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+  int n1,n2,min,i;
+  printf("enter the Number1:");
+  scanf("%d",&n1);
+    printf("enter the Number1:");
+    scanf("%d",&n2);
+
+  if(n1>n2) {
+     min=n1;
+  }
+  else
+  {
+      min=n2;
+  }
+  while(min>2)
+  {
+      if(n1%min==0 && n2%min==0)
+      {
+          printf("%d is a LCM of %d and %d",min,n1,n2);
+          break;
+      }
+      min--;
+  }
+    return 0;
+}
