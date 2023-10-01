@@ -1,0 +1,23 @@
+#include<iostream>
+#include<map>
+using namespace std;
+int main()
+{
+    string s="abbbccccfffffeeee";
+    int n=1;
+    char z;
+    map<char,int>m;
+    for(auto i:s)
+    {
+        m[i]++;
+    }
+    for(auto i:m)
+    {
+        if(i.second>n)
+        {
+            n=i.second;
+            z=i.first;
+        }
+    }
+    cout<<z<<endl;
+}
