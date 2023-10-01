@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+  int n,sum=0,rev=0,s,t,c=0;
+  printf("enter the value:");
+  scanf("%d",&n);
+  t=n;
+  s=n;
+  while(n>0)
+  {
+      rev=n%10;
+      sum=sum+rev;
+      n=n/10;
+  }
+  printf("%d",sum);
+return 0;
+}
