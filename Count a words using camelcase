@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string s="hiHowAreYou";
+    int v=0;
+    for(auto i:s)
+    {
+        if(i>=65 && i<=90)
+        {
+            v++;
+        }
+    }
+    cout<<"Number of words:"<<v+1<<endl;
+}
