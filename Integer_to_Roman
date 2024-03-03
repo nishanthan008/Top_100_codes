@@ -1,0 +1,37 @@
+#include <iostream>
+#include<unordered_map>
+using namespace std;
+int main()
+{
+    unordered_map<int,string>xp;
+    xp[1]="I";
+     xp[4]="IV";
+    xp[5]="V";
+     xp[9]="IX";
+    xp[10]="X";
+     xp[40]="XL";
+    xp[50]="L";
+     xp[90]="XC";
+    xp[100]="C";
+     xp[400]="CD";
+    xp[500]="D";
+     xp[900]="CM";
+    xp[1000]="M";
+    string res="";
+    int a[]={1000,900,400,500,100,90,50,40,10,9,4,5,1};
+    int n=sizeof(a)/sizeof(a[0]),q,num=1994;
+    for(int i=0;i<n;i++)
+    {
+    if(num>=a[i])
+    {
+        q=num/a[i];
+        num=num%a[i];
+        for(int j=0;j<q;j++)
+        {
+            res+=xp[a[i]];
+        }
+    }
+    }
+    cout<<res;
+    return 0;
+}
